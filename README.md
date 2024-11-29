@@ -4,7 +4,7 @@ A modern web application to discover and track the best Black Friday deals for d
 
 ## Demo
 
-Check out the live demo: [https://black-friday-deals.vercel.app/](https://black-friday-deals.vercel.app/)
+Check out the live demo: [https://black-friday-deals.functions.on-fleek.app/](https://black-friday-deals.functions.on-fleek.app/)
 
 ## Tech Stack
 
@@ -14,6 +14,7 @@ Check out the live demo: [https://black-friday-deals.vercel.app/](https://black-
 - **Motion:** [Framer Motion](https://www.framer.com/motion/)
 - **Toast Notifications:** [Sonner](https://sonner.emilkowal.ski/)
 - **Font:** [Inter](https://fonts.google.com/specimen/Inter)
+- **Deployment:** [Fleek Platform](https://fleek.xyz/) (@fleek-platform/next)
 
 ## Features
 
@@ -31,6 +32,7 @@ Check out the live demo: [https://black-friday-deals.vercel.app/](https://black-
 - 📱 Responsive grid layout
 - 🎨 Clean and modern UI
 - ⚡ Optimized performance
+- 🚀 Next.js-optimized deployment with Fleek Platform
 
 ## Getting Started
 
@@ -38,6 +40,7 @@ Check out the live demo: [https://black-friday-deals.vercel.app/](https://black-
 
 - Node.js (v18+ recommended)
 - npm, yarn, or pnpm
+- Fleek CLI (for deployment)
 
 ### Installation
 
@@ -62,6 +65,39 @@ yarn dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application
+
+### Deployment with Fleek
+
+1. Install the required CLIs:
+```bash
+# Install Fleek CLI
+npm install -g @fleekxyz/cli
+
+# Install Fleek Next.js Platform CLI
+npm install -g @fleek-platform/next
+```
+
+2. Authenticate with Fleek:
+```bash
+fleek login
+```
+
+3. Build your Next.js application with Fleek:
+```bash
+fleek-next build
+```
+
+4. Create a new Fleek function:
+```bash
+fleek functions create --name black-friday-deals
+```
+
+5. Deploy your application:
+```bash
+fleek functions deploy --bundle=false --path .fleek/dist/index.js --assets .fleek/static --name black-friday-deals
+```
+
+Your Next.js application will be deployed as a Fleek function with optimized static assets.
 
 ## Contributing
 
