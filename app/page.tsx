@@ -216,7 +216,7 @@ export default function Home() {
           <p className="mt-2">
             View source on{" "}
             <a
-              href="https://github.com/prasanthLalapeta/black-friday-deals"
+              href="https://github.com/prasanthLalapeta/black-friday-deals-fleek"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium underline hover:text-foreground"
