@@ -2,6 +2,10 @@
 
 A modern web application to discover and track the best Black Friday deals for developers, built with Next.js 14 and Tailwind CSS.
 
+## Demo
+
+Check out the live demo: [https://black-friday-deals.vercel.app/](https://black-friday-deals.vercel.app/)
+
 ## Tech Stack
 
 - **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
@@ -69,6 +73,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Built by [Prasanth Lalapeta](https://x.com/heylalapeta)
 
 ### Data Source
-All deals data is sourced from [Awesome Black Friday & Cyber Monday Deals](https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday) repository by [@trungdq88](https://x.com/tdinh_me).
+All deals data is sourced from [Awesome Black Friday & Cyber Monday Deals](https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday) repository by [@trungdq88](https://github.com/trungdq88).
 
 

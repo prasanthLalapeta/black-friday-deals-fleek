@@ -213,6 +213,17 @@ export default function Home() {
               Awesome Black Friday & Cyber Monday Deals
             </a>
           </p>
+          <p className="mt-2">
+            View source on{" "}
+            <a
+              href="https://github.com/prasanthLalapeta/black-friday-deals"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline hover:text-foreground"
+            >
+              GitHub
+            </a>
+          </p>
         </div>
       </footer>
     </div>
