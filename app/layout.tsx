@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@/components/analytics";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${fontSans.variable} font-sans bg-background text-foreground`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
