@@ -7,11 +7,9 @@ import { DealsPagination } from "@/components/deals-pagination";
 import { DealModal } from "@/components/deal-modal";
 import { Sidebar } from "@/components/sidebar";
 import { Deal } from "@/lib/types";
-import { Skeleton } from "@/components/ui/skeleton";
 import { Toaster } from "sonner";
 import { fetchAndParseDeals } from "@/lib/api";
 import { Category } from "@/lib/api";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { Header } from "@/components/header";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 
@@ -28,7 +26,6 @@ export default function Home() {
   const [selectedDeal, setSelectedDeal] = useState<Deal | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [categoriesData, setCategoriesData] = useState<Category[]>([]);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     fetchDeals();

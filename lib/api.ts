@@ -61,7 +61,7 @@ function parseMarkdownToDealsAndCategories(markdown: string): { deals: Deal[], c
             const columns = row.split('|').map(col => col.trim()).filter(Boolean);
 
             if (columns.length >= 4) {
-                const [_, nameCol, description, discountInfo] = columns;
+                const [, nameCol, description, discountInfo] = columns;
                 const nameMatch = nameCol.match(/\[(.*?)\]\((.*?)\)/);
 
                 if (nameMatch) {
